@@ -1,0 +1,194 @@
+:root {
+    --mainColor: white;
+    --secondColor: red;
+    --mainFont: arail;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--mainColor);
+}
+#pass-error {
+    color: var(--secondColor)
+}
+.fa-3x {
+    color: #a7a7a7;
+}
+.carousel-item {
+    height: 400px
+}
+.carousel-item::before {
+    content: "";
+    opacity: 0.5;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+.navbar {
+    background-color: #333;
+}
+.navbar .navbar-brand {
+    color: white
+}
+.navbar .navbar-nav .nav-link {
+    color: #FFF;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffc600
+}
+.navbar .navbar-nav .nav-link {
+    color: white
+}
+.navbar .navbar-toggler {
+    color: white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.main-title {
+    margin: 50px 0 35px 0
+}
+.contact input,
+.contact textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid red;
+    border-radius: 0;
+}
+.contact textarea::placeholder {
+    padding-top: -25px;
+}
+.contact input:focus,
+.contact textarea:focus {
+    box-shadow: none;
+    font-size: 16px;
+    border-bottom: 2px solid rgb(70, 2, 2);
+}
+.my-class::placeholder {
+    color: red;
+    font-weight: bold;
+}
+.contact span {
+    display: none;
+}
+.contact textarea {
+    resize: none;
+}
+label.error {
+    color: red;
+    font-style: italic
+}
+.social {
+    display: none;
+    position: fixed;
+    top: 400px;
+    z-index: 10000;
+}
+.social a {
+    display: inline-block;
+    padding: 10px;
+    color: #fff
+}
+.face {
+    background-color: #1da1f2;
+    transition: all 0.3s
+}
+.face:hover {
+    border-radius: 50%;
+}
+.twit {
+    background-color: #aab8c2;
+    transition: all 0.3s
+}
+.twit:hover {
+    border-radius: 50%;
+}
+.google {
+    background-color: #34a853;
+    transition: all 0.3s
+}
+.google:hover {
+    border-radius: 50%;
+}
+.footer {
+    background-color: #333;
+    position: relative;
+    bottom: 0;
+    color: white;
+}
+.footer ul li a {
+    color: white;
+    transition-duration: 1s;
+    text-decoration: none
+}
+.footer ul li:hover a {
+    color: #ffc600;
+    padding-left: 5px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffc600;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 99
+}
+@media(max-width:768px) {
+    .navbar {
+        background-color: var(--main-color);
+    }
+    .navbar .navbar-brand {
+        color: #111
+    }
+    .navbar .navbar-nav .nav-link {
+        color: #111;
+    }
+    .navbar .navbar-toggler {
+        color: #111;
+    }
+    .login-btn {
+        margin-bottom: 10px;
+    }
+    .carousel-item::before {
+        content: "";
+        opacity: 0.4;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
+    .carousel-item {
+        height: 200px
+    }
+    .carousel-item .carousel-caption {
+        text-align: center;
+        bottom: 30px;
+        color: rgb(224, 224, 221)
+    }
+    .main-title {
+        text-align: center;
+        color: blue
+    }
+    .card {
+        margin-bottom: 25px;
+    }
+    .contact-img {
+        display: none
+    }
+    .footer {
+        background-color: #0277bd;
+        color: white
+    }
+}
